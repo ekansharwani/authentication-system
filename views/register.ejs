@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Register</title>
+    </head>
+
+    <body class="bg-blue-100 text-gray-900">
+        <nav class="border-b bg-blue-700 border-blue-400 shadow-lg">
+            <div class="max-w-6xl mx-auto py-3 px-6 xl:px-0 flex items-center justify-between">
+                <div class="menu-left flex items-center space-x-6">
+                    <a href="/" class="py-4 text-xl text-white font-bold tracking-wide">Authentication System</a>
+
+                    <ul class="flex items-center space-x-6">
+                        <li><a href="/login" class="hover:bg-blue-800 transition px-4 py-2 text-white rounded-lg">Login</a></li>
+                        <li><a href="/register" class="hover:bg-blue-800 transition px-4 py-2 text-white rounded-lg">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex items-center justify-center min-h-screen">
+            <div class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8">
+                <h1 class="mb-6 text-3xl font-semibold text-center text-blue-700">
+                    Sign Up
+                </h1>
+            
+                <form method="POST" action="/register" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 font-medium" for="username">Username</label>
+                        <input type="text" name="username" id="username" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium" for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium" for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium" for="email">E-mail</label>
+                        <input type="email" name="email" id="email" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium" for="password">Password</label>
+                        <input type="password" name="password" id="password" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+            
+                    <div>
+                        <button class="w-full py-3 rounded-lg text-white bg-blue-600 hover:bg-blue-800 transition font-medium">
+                            Register
+                        </button>
+                    </div>
+                    <div class="border-t pt-3 text-center">
+                        <p class="text-sm text-gray-600">
+                            Already have an account?
+                            <a class="text-blue-600 font-semibold hover:underline" href="/login">Login Now</a>
+                        </p>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <a class="text-blue-600 font-semibold hover:underline" href="/">Forgot password?</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </main>        
+
+        <footer class="bg-blue-700 text-white mt-12">
+            <div class="max-w-6xl mx-auto py-10 px-6 xl:px-0 md:flex justify-between">
+                <div class="footer-left mb-12 md:mb-0">
+                    <h2 class="mb-5 uppercase text-lg font-semibold">About Us</h2>
+                    <p class="text-gray-200">Lorem ipsum bla bla bla..</p>
+                </div>
+
+                <div class="footer-right">
+                    <h2 class="mb-5 uppercase text-lg font-semibold">Social Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300 transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-blue-300 transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-blue-300 transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/hyperscript@2.2.0/dist/hyperscript.js"></script>
+    </body>
+</html>
